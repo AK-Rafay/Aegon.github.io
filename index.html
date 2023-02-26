@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEGON</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--                  SOME IMPORTANT INSTRUCTION                    -->
+
+    <!-- 
+    use display flex to align the div boxes
+    align item:center; would definetely be used every where 
+    justify content :center; would bring all the boxes in center if the page dosent have the width then 
+    the other boxes will come to center in other line
+
+    just like this justify content; space-around; would bring boxes to right and left corner if the boxes 
+    width is high and cant fix in one line   so it will bring other boxes to right and left corners of next 
+    line
+-->
+<!-- box-shadow: 10px 10px 10px rgb(209, 209, 209);  here 1st 10px is for shadow on x axis then 2nd 10px for shadow on y axis and last 10px is for blur the add a color-->
+
+<!-- 
+    dont use position relative or any other when display flex is applied 
+    use margin(top/bottom/right/left) or padding(top/bottom/right/left) for leftover alignment of text
+     in div boxes or else your  div or any text would overlap with navbar whose position is fixed
+-->
+<!--
+    use z-index:100; in navbar when its position is fixed 
+    the test and other animation wont overlap
+--> 
+
+<!-- .main-links a:hover   if you want to hover multiple links so put it in a div with class and then use .class a:hover-->
+<!-- box-shadow: 10px 10px 10px rgb(209, 209, 209);  here 1st 10px is for shadow on x axis then 2nd 10px for shadow on y axis and last 10px is for blur the add a color-->
+<!-- mix-blend-mode: multiply;   this improves the pixels of back ground color when opacity is applied and makes background color transparent but with a color like sunglasses -->
+<!-- to download a pic from figma go to inspect then select option next to css code (the one with 3 lines) press on the file link then right click and press save as. the pic will downloaded-->
+</head>
+<body class="body">
+    <nav class="navbar">
+
+     
+        <div class="navbar1">
+            <p class="aegon"><span class="logo"><i class="fa-sharp fa-solid fa-fire-flame-curved fa-3x"></i></span><span class="logo1">AEG</span><span class="logo2">ON</span></p>
+            <ul class="navlinks">
+                <li><a class="links" href="#"><i class="fa-sharp fa-solid fa-cart-shopping fa-2x"></i></a></li>
+                <li><a class="links" href="#"><i class="fa-regular fa-bell fa-2x"></i></a></li>
+                <li><a class="links" href="#"><i class="fa-regular fa-heart fa-2x"></i></a></li>
+                <li><a class="links" href="./my account.html"><i class="fa-regular fa-circle-user fa-2x"></i></a></li>
+            </ul>
+
+        </div> 
+        <div class="navbar2">
+            <div class="nav-search">
+                <input type="search" name="search" id="search" placeholder="  Enter keywords">
+                <span><a href="#"><i class="fa-solid fa-magnifying-glass "></i></a></span>
+            </div>
+            <div class="nav-buttons">
+                <a class="buttons" href="./index.html">Home</a>
+                <a class="buttons" href="#">Shop</a>
+                <a class="buttons" href="#">Blog</a>
+                <a class="buttons" href="#">About</a>
+                <a class="contact-button" href="./contactus.html">Contact Us</a>
+                
+
+            </div>
+             
+        </div>
+    </nav>
+        <div class="page1">
+            <div class="heading">
+                <div class="heading1">
+                    <span>Healthy Food</span><span>& Organic Market</span>
+                </div>
+                
+                <div class="heading2">
+                    <p>All Natural Product Available</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="main1">
+          <p><span class="def1">Order Now & Get </span><span class="def2"> 50% off</span></p>
+  </div>
+        <div class="page2">
+            
+            <div class="main2">
+                <div class="x">
+                    <div class="x1">14- Day Money Return</div>
+                    <div class="x2">The product can be returned within 14 days. No excuses would be admitted. The product should be well packed. The product should be in good condition</div>
+                </div>
+                <div class="x">
+                    <div class="x1">Fast Free Shipment</div>
+                    <div class="x2">Shipping is one of the most important parts of the online shopping experience—it's often what dictates whether customers make a purchase or abandon their cart. </div>
+                </div>
+                <div class="x">
+                    <div class="x1">100% Satisfaction</div>
+                    <div class="x2">Our customers are our 1st priority. From our positive responses from the customers, we are 100% sure of your satisfaction from our product and a great experience.</div>
+                </div>
+            </div>
+            
+        </div>
+      <div class="main3">
+        <p><span class="def2">Buy </span><span class="def1"> Organic Food</span></p>
+
+        <div class="main-links">
+            <a href="">All</a>
+            <a href="">Fruits</a>
+            <a href="">Vegetables</a>
+        </div>
+
+      </div>
+
+    <div class="product1">
+        <a class="jeff" href="#">
+      <div class="box">
+        <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+        <div class="text">
+            <div class="product-name">Strawberry</div>
+            <div class="gm">500gm</div>
+            <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+            <div><a class="cart-button" href="">Add to Cart</a></div>
+        </div>
+      </div></a>
+      <a class="jeff" href="#">
+      <div class="box">
+        <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+        <div class="text">
+            <div class="product-name">Strawberry</div>
+            <div class="gm">500gm</div>
+            <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+            <div><a class="cart-button" href="">Add to Cart</a></div>
+        </div>
+      </div></a>
+      <a class="jeff" href="#">
+      <div class="box">
+        <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+        <div class="text">
+            <div class="product-name">Strawberry</div>
+            <div class="gm">500gm</div>
+            <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+            <div><a class="cart-button" href="">Add to Cart</a></div>
+        </div>
+      </div></a>
+      <a class="jeff" href="#">
+      <div class="box">
+        <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+        <div class="text">
+            <div class="product-name">Strawberry</div>
+            <div class="gm">500gm</div>
+            <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+            <div><a class="cart-button" href="">Add to Cart</a></div>
+        </div>
+      </div></a>
+    </div>
+
+    <div class="product2">
+        <a class="jeff" href="#">
+        <div class="box">
+          <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+          <div class="text">
+              <div class="product-name">Strawberry</div>
+              <div class="gm">500gm</div>
+              <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+              <div><a class="cart-button" href="">Add to Cart</a></div>
+          </div>
+        </div></a>
+        <div class="box">
+            <a class="jeff" href="#">
+          <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+          <div class="text">
+              <div class="product-name">Strawberry</div>
+              <div class="gm">500gm</div>
+              <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+              <div><a class="cart-button" href="">Add to Cart</a></div>
+          </div>
+        </div></a>
+        <a class="jeff" href="#">
+        <div class="box">
+          <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+          <div class="text">
+              <div class="product-name">Strawberry</div>
+              <div class="gm">500gm</div>
+              <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+              <div><a class="cart-button" href="">Add to Cart</a></div>
+          </div>
+        </div></a>
+        <a class="jeff" href="#">
+        <div class="box">
+          <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+          <div class="text">
+              <div class="product-name">Strawberry</div>
+              <div class="gm">500gm</div>
+              <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+              <div><a class="cart-button" href="">Add to Cart</a></div>
+          </div>
+        </div></a>
+      </div>
+
+      <div class="product3">
+        <a class="jeff" href="#">
+        <div class="box">
+          <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+          <div class="text">
+              <div class="product-name">Strawberry</div>
+              <div class="gm">500gm</div>
+              <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+              <div><a class="cart-button" href="">Add to Cart</a></div>
+          </div>
+        </div></a>
+        <a class="jeff" href="#">
+        <div class="box">
+          <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+          <div class="text">
+              <div class="product-name">Strawberry</div>
+              <div class="gm">500gm</div>
+              <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+              <div><a class="cart-button" href="">Add to Cart</a></div>
+          </div>
+        </div></a>
+        <a class="jeff" href="#">
+        <div class="box">
+          <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+          <div class="text">
+              <div class="product-name">Strawberry</div>
+              <div class="gm">500gm</div>
+              <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+              <div><a class="cart-button" href="">Add to Cart</a></div>
+          </div>
+        </div></a>
+        <a class="jeff" href="#">
+        <div class="box">
+          <div class="pic"><img src="./strawberry.jpg" alt="" height="190" width="190"></div>
+          <div class="text">
+              <div class="product-name">Strawberry</div>
+              <div class="gm">500gm</div>
+              <div class="price"><del class="fake">$500</del><ins class="real">$300</ins></div>
+              <div><a class="cart-button" href="">Add to Cart</a></div>
+          </div>
+        </div></a>
+      </div> 
+      <br><br/><br/>
+    <div class="client">
+      <div class="era1">
+        <br/><br/>
+        <div class="a"><p><span class="a2">Client </span><span class="a1"> Says</span></p></div>
+        <div class="b">The best representation of our business is what our clients leave the review. Click the below link to find out what our clients have to say about us.</div>
+        <br/>
+        <div class="c"><div class="cart-button">See more</div></div>
+        <br/><br/>
+        <div class="b">Worked with 100+ Companies</div>
+      </div>
+      <div class="era2"></div>
+      
+     
+    </div>
+ 
+
+    <br><br/><br/><br/>
+    <div class="advatise">
+      <div class="box1">
+        <div class="d1"></div>
+        <div class="d2">
+          <p class="z1">Our Drinks</p>
+          <p class="z2">Our aim is to create a perfect juice with the best quality </p>
+          <div class="z3"><div class="cart-button">See more</div></div>
+
+
+        </div>
+        
+      </div>
+      <div class="box2">
+        <div class="d3">
+          <p class="z1">Fast Food</p>
+          <p class="z2">Our aim is to create a perfect fast food with the best quality. </p>
+          <div class="z3"><div class="cart-button">See more</div></div>
+        </div>
+        <div class="d4"></div>
+      </div>
+      
+    </div>
+    <br><br/><br/><br/>
+    <div class="newsletter">
+      <div class="header">
+        <p class="n1">News Letter</p>
+      </div>
+      <div class="sub-header">
+        <p class="n2">Lets us know about your reviews</p>
+      </div>
+      <div class="email-button">
+        <input type="email" name="email" id="email" placeholder="  Enter Email"><span class="jeffr"><input class="newsletter-button" type="submit" value="Submit"></span>
+        
+      </div>
+    </div>
+
+
+    <div class="foot">
+
+      <div class="ending1">
+          <p>Follow Us</p>
+          <a href="#" target="_blank"> <span class="fb"><i class="fa-brands fa-facebook fa-2x"></i></span></a>
+          <a href="#" target="_blank"><span class="ins"><i class="fa-brands fa-instagram fa-2x"></i></span></a>
+          <a href="#" target="_blank"><span class="you"><i class="fa-brands fa-square-youtube fa-2x"></i></span></a>
+          <br/> <br/> <br/>
+          <span>Mail us at :</span>
+          <br/> 
+          <span>rafaysk19@gmail.com</span>
+          <br/>
+          <span>+92 315 2553546</span>
+      </div>
+      <div class="ending2">
+          <p>HELP?</p>
+          <a href="" class="gram">How To Order</a><br/><br/>
+          <a href="" class="gram">How To Use Gift Card</a><br/><br/>
+          <a href="" class="gram">Returns & Exchanges</a><br/><br/>
+          <a href="" class="gram">Shipping Details</a>
+      </div>
+      <div class="ending3">
+          <p>What's New?</p>
+          <a href="" class="gram">Privacy Policy</a><br/><br/>
+          <a href="" class="gram">Customer Reviews</a><br/><br/>
+          <a href="" class="gram">Customer Reviews</a><br/><br/>
+          <a href="" class="gram">Become a Brand Ambassador</a>
+      </div>
+  
+     
+</div>
+    
+
+   
+
+        
+    
+</body>
+</html>
